@@ -86,9 +86,9 @@ You can use anyone from them.
 | -m1 | Algorithm which is used for first model it can be SVM,LR,DT,NB  |
 | -m2 | Algorithm which is used for second model it can be SVM,LR,DT,NB  |
 | -m3 | Algorithm which is used for third model it can be SVM,LR,DT,NB  |
-| -c1 | Input of first model first input means the starting of range and second input means finished point of range which can overlap the -c2 and -c3  |
-| -c2 | Input of second model first input means the starting of range and second input means finished point of range which can overlap the -c1 and -c3  |
-| -c3 | Input of third model first input means the starting of range and second input means finished point of range which can overlap the -c1 and -c2  |
+| -f1 | Input of first model first input means the starting of range and second input means finished point of range which can overlap the -f2 and -f3  |
+| -f2 | Input of second model first input means the starting of range and second input means finished point of range which can overlap the -f1 and -f3  |
+| -f3 | Input of third model first input means the starting of range and second input means finished point of range which can overlap the -f1 and -f2  |
 
 ## References
 
