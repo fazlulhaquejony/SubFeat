@@ -70,11 +70,11 @@ You can use anyone from them.
 
 **or,**
 
-**Test Command Line 2 :**  `python main.py -fa protein.fasta -la proteinLabel.txt -seq protein -c1 0 500 -c2 400 2400 -c3 1600 24420`
+**Test Command Line 2 :**  `python main.py -fa protein.fasta -la proteinLabel.txt -seq protein -f1 0 500 -f2 400 2400 -f3 1600 24420`
 
 **or,**
 
-**Test Command Line 3 :**  `python main.py -fa protein.fasta -la proteinLabel.txt -seq protein –m1 DT –m2 SVM –m3 LR -c1 0 500 -c2 400 2400 -c3 1600 24420`
+**Test Command Line 3 :**  `python main.py -fa protein.fasta -la proteinLabel.txt -seq protein –m1 DT –m2 SVM –m3 LR -f1 0 500 -f2 400 2400 -f3 1600 24420`
 
 **Table 3 :**  command line element
 
