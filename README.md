@@ -66,27 +66,24 @@ We use four algorithm Support Vector Machine, Logistic Regression, Naive Bayes a
 ## How to Run Package :
 You can use anyone from them.
 
-**Test Command Line 1 :**
+**Test Command-line #1:**
 ```console
 user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq protein
 ```
 
 **or,**
-
-**Test Command Line 2 :** 
+**Test Command-line #2:** 
 ```console
 user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq protein -f1 0 500 -f2 400 2400 -f3 1600 24420
 ```
 
 **or,**
-
-**Test Command Line 3 :**
+**Test Command-line #3 :**
 ```console
 user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq protein –m1 DT –m2 SVM –m3 LR -f1 0 500 -f2 400 2400 -f3 1600 24420
 ```
 
 **Table 3 :**  command line element
-
 | Symbol  | Explanation  |
 | ------- | ------------ |
 | -fa | Fasta file with .txt or .fasta format  |
