@@ -23,7 +23,7 @@ MELPIAPIGRIIKDAGAERVSDDARITLAKILEEMGRDIASEAIKLARHAGRKTIKAEDIELAVRRFK
 ```
 Here in read.py we have options to read `.txt` and `.fasta`  extension file.
 
-### Feature Extraction/Gneration:
+### Feature Extraction/Generation:
 We extract feature for,<br>
 - Protein data : 24,420
 - RNA date : 212
