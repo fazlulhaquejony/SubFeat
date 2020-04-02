@@ -59,9 +59,9 @@ if __name__ == '__main__':
     p.add_argument('-m3', '--model3', type=str, help='choose model3', default='LR',
                    choices=['LR', 'SVM', 'KNN', 'DT', 'SVM', 'NB', ])
 
-    p.add_argument('-c1', '--category1', nargs='*', help='#s feature inclusive', default=[0, 8420])
-    p.add_argument('-c2', '--category2', nargs='*', help='#s feature inclusive', default=[8420, 16420])
-    p.add_argument('-c3', '--category3', nargs='*', help='#s feature inclusive', default=[16420, 24420])
+    p.add_argument('-f1', '--category1', nargs='*', help='#s feature inclusive', default=[0, 8420])
+    p.add_argument('-f2', '--category2', nargs='*', help='#s feature inclusive', default=[8420, 16420])
+    p.add_argument('-f3', '--category3', nargs='*', help='#s feature inclusive', default=[16420, 24420])
 
     args = p.parse_args()
 
