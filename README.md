@@ -2,7 +2,7 @@
 
 ###  Datasets:
 
-We have used three types of datasets in this experiment; the primary structure of Protein, DNA, and RNA.
+We have used three types of datasets in this experiment; the primary structure of protein, DNA, and RNA.
 
 | Dataset  | Data  | Instances  | Total  | Data type  |
 | -------- | ----- | ---------- | ------ | ---------- |
