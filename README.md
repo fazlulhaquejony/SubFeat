@@ -1,6 +1,6 @@
 #  SubFeat
 
-## Datasets:
+### Datasets:
 
 We have used three types of dataset . They are Protein , DNA and RNA.
 
@@ -11,7 +11,7 @@ We have used three types of dataset . They are Protein , DNA and RNA.
 | Dataset PAI244(Chen et al. [3]) | Positive<br>Negative  | 125<br>119  | **244** | RNA | 
 | Dataset PDB1075(Liu et al. [4]) | DNA-binding proteins<br>Non-DNA-binding proteins  | 525<br>550  | **1075** | Protein | 
 
-## Read file:
+### Read File:
 All the datasets file is in fasta format. Which is with `.txt` or `.fasta` extension.  like `Proteindata.txt` or  `Protein.fasta`. But inside the file the data is like,
 ```
 >1AKHA|1
@@ -23,7 +23,7 @@ MELPIAPIGRIIKDAGAERVSDDARITLAKILEEMGRDIASEAIKLARHAGRKTIKAEDIELAVRRFK
 ```
 Here in read.py we have options to read `.txt` and `.fasta`  extension file.
 
-## Feature extraction/generation:
+### Feature Extraction/Gneration:
 We extract feature for,<br>
 - Protein data : 24,420
 - RNA date : 212
@@ -60,10 +60,10 @@ kGap is an integer number representation of gap count in feature N. For example 
 Here we have divided total feature space into 3 Subspaces . 
 For protein dataset its full feature space c: 24,420 divided into c1: 0-8,420 ,c2: 8,420-16,420 , c3: 16,420- 24,420 .For DNA and RNA dataset its full feature space c: 212 divided into c1: 0 - 84 ,c2: 84 -148 , c3: 148 - 212 .Here anyone can give input of the c1,c2 and c3 range. The sequence can be override. But remember, the range must be  lower bound to upper bound.
 
-## Learning/results generate:
+### Learning/results generate:
 We use four algorithm Support Vector Machine, Logistic Regression, Naive Bayes and Decision Tree. Applying these algorithms on subspace dataset, we have four different results. On this result  we have  user maximum voting algorithm to generate final result.
 
-## How to Run Package:
+### How to Run Package:
 You can use anyone from them.
 
 **Test Command-line #1:**
