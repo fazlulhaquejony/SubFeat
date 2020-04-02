@@ -55,7 +55,8 @@ Here, we have divided total feature space into 3 Subspaces .
 For protein dataset its full feature space f: 24,420 divided into f1: 0-8,420, f2: 8,420-16,420 , f3: 16,420- 24,420. For DNA and RNA dataset its full feature space f: 212 divided into f1: 0 - 84,f2: 84 -148 , f3: 148 - 212 .Here anyone can give input of the f1, f2 and f3 range. The sequence can be override. But remember, the range must be  lower bound to upper bound.
 
 #### Learning/results generate:
-We use four algorithm Support Vector Machine, Logistic Regression, Naive Bayes, and Decision Tree. Applying these algorithms on subspace dataset, we have four different results. On this result  we have  user maximum voting algorithm to generate final result.
+We use five classificatiom algorithm: Support Vector Machine, Logistic Regression, Naive Bayes, K-Nearest Neighbors, Decision Tree. Applying these algorithms on subspace dataset, we have five different results. On this result  we have  user maximum voting algorithm to generate final result.
+
 
 ### [3]. How to Run Package:
 
