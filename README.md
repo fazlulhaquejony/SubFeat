@@ -1,9 +1,7 @@
 #  SubFeat
 
-The PyFest is an extensive Python-based tool for generating various numerical feature pre-
-sentation schemes from DNA, RNA and protein sequences. This tool is also able to select
-the best features among from previously generated vast amount of features. After that, it
-can train model, to evaluate model using various machine learning techniques.
+### Abstract
+The SubFeat is an extensive Python-based tool for generating various numerical feature representation schemes from DNA, RNA and protein primary structure sequences. It is an extension edition of the [PyFeat](https://github.com/mrzResearchArena/PyFeat). We additionally provide the feature overlapping option that user can customize it for own research purposes; we also prove an ensemble classification technique. This  After that, it can train model, to evaluate model using various machine learning techniques.
 
 ### [1]. Read File:
 All the datasets file are in `FASTA` format which can be with `.txt` or `.fasta` extension. E.g. `anyName.txt` or  `anyName.fasta`. Please know more about the FASTA file format ([by clicking here!](https://en.wikipedia.org/wiki/FASTA_format)).
