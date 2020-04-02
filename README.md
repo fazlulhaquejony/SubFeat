@@ -50,32 +50,30 @@ kGap is an integer number representation of gap count in feature N. For example 
 
 **Note:** When sequence becomes DNA, RNA, and Protein then N = {A,C,G,T}, N = {A,C,G,U}, and N = {A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y} respectively.
 
-## Sub spacing(modeling): 
-Here we have divided total feature space into 3 Subspaces . 
-For protein dataset its full feature space c: 24,420 divided into c1: 0-8,420 ,c2: 8,420-16,420 , c3: 16,420- 24,420 .For DNA and RNA dataset its full feature space c: 212 divided into c1: 0 - 84 ,c2: 84 -148 , c3: 148 - 212 .Here anyone can give input of the c1,c2 and c3 range. The sequence can be override. But remember, the range must be  lower bound to upper bound.
+#### Sub spacing (Modeling): 
+Here, we have divided total feature space into 3 Subspaces . 
+For protein dataset its full feature space f: 24,420 divided into f1: 0-8,420, f2: 8,420-16,420 , f3: 16,420- 24,420. For DNA and RNA dataset its full feature space f: 212 divided into f1: 0 - 84,f2: 84 -148 , f3: 148 - 212 .Here anyone can give input of the f1, f2 and f3 range. The sequence can be override. But remember, the range must be  lower bound to upper bound.
 
-### Learning/results generate:
-We use four algorithm Support Vector Machine, Logistic Regression, Naive Bayes and Decision Tree. Applying these algorithms on subspace dataset, we have four different results. On this result  we have  user maximum voting algorithm to generate final result.
+#### Learning/results generate:
+We use four algorithm Support Vector Machine, Logistic Regression, Naive Bayes, and Decision Tree. Applying these algorithms on subspace dataset, we have four different results. On this result  we have  user maximum voting algorithm to generate final result.
 
-### How to Run Package:
-You can use anyone from them.
+### [3]. How to Run Package:
 
-**Test Command-line #1:**
+#### [3.1] Test Command-line #1:
 ```console
 user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq protein
 ```
 
-**or,**
-**Test Command-line #2:** 
+#### [3.2] Test Command-line #2:
 ```console
 user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq protein -f1 0 500 -f2 400 2400 -f3 1600 24420
 ```
 
-**or,**
-**Test Command-line #3:**
+#### [3.3] Test Command-line #3:
 ```console
 user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq protein –m1 DT –m2 SVM –m3 LR -f1 0 500 -f2 400 2400 -f3 1600 24420
 ```
+**Note: You can use anyone from them.**
 
 **Table 3:**  command line element
 | Symbol  | Explanation  |
@@ -90,8 +88,8 @@ user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq prote
 | -f2 | Input of second model first input means the starting of range and second input means finished point of range which can overlap the -f1 and -f3  |
 | -f3 | Input of third model first input means the starting of range and second input means finished point of range which can overlap the -f1 and -f2  |
 
-###  Datasets:
 
+### [4]. Datasets:
 We have used three types of datasets in this experiment; the primary structure of protein, DNA, and RNA.
 
 | Dataset  | Data  | Instances  | Total  | Data type  |
