@@ -1,18 +1,8 @@
 #  SubFeat
 
-###  Datasets:
+### [1]. Read File:
+All the datasets file are in `FASTA` format which can be with `.txt` or `.fasta` extension. E.g. `anyName.txt` or  `anyName.fasta`. Please know more about the FASTA file format [by clicking here!](https://en.wikipedia.org/wiki/FASTA_format).
 
-We have used three types of datasets in this experiment; the primary structure of protein, DNA, and RNA.
-
-| Dataset  | Data  | Instances  | Total  | Data type  |
-| -------- | ----- | ---------- | ------ | ---------- |
-| HotSpots and ColdSpots(Jani et al. [1]) | HotSpots<br>ColdSpots  | 478<br>572  | **1050** | DNA | 
-| Benchmark dataset for σ70 promoters(Lin et al. [2]) | Promoter<br>Non-promoter  | 741<br>1400  | **2141** | DNA | 
-| Dataset PAI244(Chen et al. [3]) | Positive<br>Negative  | 125<br>119  | **244** | RNA | 
-| Dataset PDB1075(Liu et al. [4]) | DNA-binding proteins<br>Non-DNA-binding proteins  | 525<br>550  | **1075** | Protein | 
-
-### Read File:
-All the datasets file is in fasta format. Which is with `.txt` or `.fasta` extension.  like `Proteindata.txt` or  `Protein.fasta`. But inside the file the data is like,
 ```
 >1AKHA|1
 KKEKSPKGKSSISPQARAFLEEVFRRKQSLNSKEKEEVAKKCGITPLQVRVWFINKRMRSK
@@ -21,13 +11,14 @@ ATCAATATCCACCTGCAGATTCTACCAAAAGTGTATTTGGAAACTGCTCCATCAAAAGGCATGTTCAGCTGAATTCAGCT
 >1B6WA|1
 MELPIAPIGRIIKDAGAERVSDDARITLAKILEEMGRDIASEAIKLARHAGRKTIKAEDIELAVRRFK
 ```
-Here in read.py we have options to read `.txt` and `.fasta`  extension file.
 
-### Feature Extraction/Generation:
-We extract feature for,<br>
+### [2]. Feature Generation:
+We initially generated feature for the
+
 - Protein data : 24,420
 - RNA date : 212
 - DNA data : 212
+
 #### Proper explanation of features: 
 K is an integer number representation of feature N. For example k=3 means the number of nucleotides ranging from 1 to 3 inclusive.
 kGap is an integer number representation of gap count in feature N. For example k=5 means the number of gaps ranging from 1 to 5 inclusive.
@@ -96,7 +87,18 @@ user@machine:~$ python main.py -fa protein.fasta -la proteinLabel.txt -seq prote
 | -f2 | Input of second model first input means the starting of range and second input means finished point of range which can overlap the -f1 and -f3  |
 | -f3 | Input of third model first input means the starting of range and second input means finished point of range which can overlap the -f1 and -f2  |
 
-## References
+###  Datasets:
+
+We have used three types of datasets in this experiment; the primary structure of protein, DNA, and RNA.
+
+| Dataset  | Data  | Instances  | Total  | Data type  |
+| -------- | ----- | ---------- | ------ | ---------- |
+| HotSpots and ColdSpots(Jani et al. [1]) | HotSpots<br>ColdSpots  | 478<br>572  | **1050** | DNA | 
+| Benchmark dataset for σ70 promoters(Lin et al. [2]) | Promoter<br>Non-promoter  | 741<br>1400  | **2141** | DNA | 
+| Dataset PAI244(Chen et al. [3]) | Positive<br>Negative  | 125<br>119  | **244** | RNA | 
+| Dataset PDB1075(Liu et al. [4]) | DNA-binding proteins<br>Non-DNA-binding proteins  | 525<br>550  | **1075** | Protein | 
+
+### References
 
 1. Jani, M.R., Mozlish, M.T.K., Ahmed, S., Tahniat, N.S., Farid, D.M., Shatabda, S.:
 irecspot-ef: Eective sequence based features for recombination hotspot prediction.
