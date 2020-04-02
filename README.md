@@ -1,7 +1,7 @@
 #  SubFeat
 
 ### [1]. Read File:
-All the datasets file are in `FASTA` format which can be with `.txt` or `.fasta` extension. E.g. `anyName.txt` or  `anyName.fasta`. Please know more about the FASTA file format [by clicking here!](https://en.wikipedia.org/wiki/FASTA_format).
+All the datasets file are in `FASTA` format which can be with `.txt` or `.fasta` extension. E.g. `anyName.txt` or  `anyName.fasta`. Please know more about the FASTA file format ([by clicking here!](https://en.wikipedia.org/wiki/FASTA_format)).
 
 ```
 >1AKHA|1
