@@ -1,4 +1,4 @@
-#  SubFeat
+#  SubFeat: A Python-based Effective Features Generation Tool from DNA, RNA, and Protein/Peptide Sequences
 
 ### Abstract
 The SubFeat is an extensive Python-based tool for generating various numerical feature representation schemes from DNA, RNA and protein primary structure sequences. It is an extension edition of the [PyFeat](https://github.com/mrzResearchArena/PyFeat). We additionally provide the feature overlapping option that user can customize it for own research purposes; we also prove an ensemble classification technique. This  After that, it can train model, to evaluate model using various machine learning techniques.
