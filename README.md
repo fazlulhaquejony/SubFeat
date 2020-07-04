@@ -1,6 +1,16 @@
-#  SubFeat: A Python-based Effective Features Generation Tool from DNA, RNA, and Protein/Peptide Sequences
+#  SubFeat: Feature Subspacing Ensemble Classifier for Function Prediction of DNA, RNA and Protein/Peptide Sequences
 
 ### Abstract
+The information of cell is contained in biological entities and among them DNA 
+(Deoxyribonucleic acid) sequence is the most fundamental. First, RNA (Ribonucleic acid) is transcribed from DNA and then protein is translated from RNA. Inside the protein are the amino acis where the cell life is described. With the advent of modern
+sequencing technologies, these sequences are now being revealed at an accelerated rate.
+However, the growth in known attributes or functionalities of these entities are still in
+slow progression due to the slow in vitro experimental methods. To predict biological
+entities from different datasets we have proposed an ensemble classification algorithm
+in this paper. Our model divides the full feature space into smaller subspaces. We have
+evaluated our model on four different datasets, two DNA, a RNA and a Protein dataset and
+it outperformed all the exisiting single classifiers as well as the ensemble classifiers.
+
 The SubFeat is an extensive Python-based tool for generating various numerical feature representation schemes from DNA, RNA and protein primary structure sequences. It is an extension edition of the [PyFeat](https://github.com/mrzResearchArena/PyFeat). We additionally provide the feature overlapping option that user can customize it for own research purposes; we also prove an ensemble classification technique. This  After that, it can train model, to evaluate model using various machine learning techniques.
 
 ### [1]. Read File:
